@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import hero from "../images/hero.png";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header>
       <h1 className="header--h1">TechStore</h1>
-      <img src={hero} className="hero--image" alt="hero image" />
+      <img src={props.hero} className="hero--image" alt="hero image" />
       <div className="header--intro">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -7,8 +7,6 @@ export default function Card({
   itemPrice,
   itemStatus,
 }) {
-  console.log(itemRating);
-
   return (
     <div className="card">
       {itemStatus !== undefined && (
