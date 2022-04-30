@@ -1,25 +1,20 @@
 import React from "react";
 
-export default function Card({
-  itemImage,
-  itemName,
-  itemRating,
-  itemPrice,
-  itemStatus,
-}) {
+export default function Card(props) {
+  console.log(props.item);
   return (
     <div className="card">
-      {itemStatus !== undefined && (
-        <div className="card--status">{itemStatus}</div>
+      {props.item.status !== undefined && (
+        <div className="card--status">{props.item.status}</div>
       )}
-      <img src={itemImage} className="card--image" alt="iphone 12" />
-      <h3 className="card--name">{itemName}</h3>
+      <img className="card--image" alt="iphone 12" />
+      <h3 className="card--name">{props.item.name}</h3>
       <span className="card--rating">
         <div className="card--star--icon"></div>
-        <div className="card--rating--counter">{itemRating}</div>
+        <div className="card--rating--counter">{props.item.rating}</div>
       </span>
       <br />
-      <span className="card--price">{itemPrice}</span>
+      <span className="card--price">{props.item.price}</span>
     </div>
   );
 }

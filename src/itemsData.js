@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     img: "iphone12.png",
     name: "Apple Iphone 12",
     price: "509.00$",
@@ -7,6 +8,7 @@ export default [
     status: "LAST ITEM",
   },
   {
+    id: 2,
     img: "iphone11.png",
     name: "Apple Iphone 11",
     price: "409.00$",
@@ -14,6 +16,7 @@ export default [
     status: "SOLD",
   },
   {
+    id: 3,
     img: "samsungS10.jpeg",
     name: "Samsung S10",
     price: "512.00$",
